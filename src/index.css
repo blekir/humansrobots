@@ -5,4 +5,47 @@ body,
   height: 100%;
   width: 100%;
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+.header {
+  padding-top: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.item {
+  opacity: 0.3;
+  cursor: pointer;
+}
+.item:hover {
+  opacity: 0.6;
+}
+.item2 {
+  opacity: 0.3;
+}
+.logo {
+  margin-left: -126px;
+}
+.divider {
+  padding-top: 5px;
 }
