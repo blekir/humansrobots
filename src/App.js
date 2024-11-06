@@ -34,6 +34,35 @@ function App() {
         <div className="logo">
           <img src={logo} alt="logo" />
         </div>
+        <div className="menu2">
+          <div className="item">
+            <img src={artisan} alt="artisan" />
+          </div>
+          <div className="item2">
+            <img className="divider" src={divider} alt="divider" />
+          </div>
+          <div className="item">
+            <img src={dye} alt="dye-art" />
+          </div>
+          <div className="item2">
+            <img className="divider" src={divider} alt="divider" />
+          </div>
+          <div className="item">
+            <img src={mouse} alt="mouse-pads" />
+          </div>
+        </div>
+        <div className="menu3">
+          <div className="item">
+            <img src={artisan} alt="artisan" />
+          </div>
+
+          <div className="item">
+            <img src={dye} alt="dye-art" />
+          </div>
+          <div className="item">
+            <img src={mouse} alt="mouse-pads" />
+          </div>
+        </div>
         <div className="socials">
           <div className="item">
             <img src={instagram} alt="instagram" />
@@ -50,6 +79,24 @@ function App() {
         </div>
       </div>
       <Keycap />
+      <div className="footer">
+        <div className="socials2">
+          <div className="item">
+            <img src={instagram} alt="instagram" />
+          </div>
+          <div className="item">
+            <img src={x} alt="x" />
+          </div>
+          <div className="item">
+            <img src={tiktok} alt="tiktok" />
+          </div>
+        </div>
+        <div className="socials2">
+          <div className="item2">
+            <img src={bar} alt="bar" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
