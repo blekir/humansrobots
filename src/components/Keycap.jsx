@@ -11,7 +11,8 @@ import {
 import * as THREE from 'three';
 
 import modelPath from '../assets/key1.fbx'; // Import the FBX model
-import texture1 from '../assets/tarkov-woodland-01-RGB.jpg'; // Import the texture
+import texture1 from '../assets/empty.jpg'; // Import the texture
+// import texture1 from '../assets/tarkov-woodland-01-RGB.jpg'; // Import the texture
 import texture2 from '../assets/tarkov-woodland-02.jpg'; // Import the texture
 
 import robot from '../assets/robot.png';
@@ -83,7 +84,7 @@ const Model = ({
 
   const fbx = useLoader(FBXLoader, modelPath);
   // Load both textures
-  const textures = useLoader(TextureLoader, [texture1, texture2]);
+  const textures = useLoader(TextureLoader, [texture1]);
 
   useEffect(() => {
     // Set the initial texture
@@ -135,9 +136,9 @@ const Model = ({
         setRotationY(0);
 
         // Toggle the texture
-        setCurrentTexture((prevTexture) =>
-          prevTexture === textures[0] ? textures[1] : textures[0]
-        );
+        // setCurrentTexture((prevTexture) =>
+        //   prevTexture === textures[0] ? textures[1] : textures[0]
+        // );
       }
 
       const time = state.clock.getElapsedTime();
